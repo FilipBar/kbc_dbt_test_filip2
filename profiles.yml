@@ -1,0 +1,12 @@
+send_anonymous_usage_stats: false
+demo_filip:
+    target: demo_filip
+    outputs:
+        demo_filip:
+            account: '{{ env_var("DBT_KBC_DEMO_FILIP_ACCOUNT") }}'
+            database: '{{ env_var("DBT_KBC_DEMO_FILIP_DATABASE") }}'
+            password: '{{ env_var("DBT_KBC_DEMO_FILIP_PASSWORD") }}'
+            schema: '{{ env_var("DBT_KBC_DEMO_FILIP_SCHEMA") }}'
+            type: '{{ env_var("DBT_KBC_DEMO_FILIP_TYPE") }}'
+            user: '{{ env_var("DBT_KBC_DEMO_FILIP_USER") }}'
+            warehouse: '{{ env_var("DBT_KBC_DEMO_FILIP_WAREHOUSE") }}'
